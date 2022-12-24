@@ -16,17 +16,37 @@ export default function handler(req: NextRequest) {
     (
       <div
         style={{
-          fontSize: 128,
-          background: "white",
-          width: "100%",
-          height: "100%",
           display: "flex",
-          textAlign: "center",
-          alignItems: "center",
-          justifyContent: "center",
+          padding: 60,
+          backgroundImage: "linear-gradient(to right, #334d50, #cbcaa5)",
+          height: "100%",
+          width: "100%",
         }}
       >
-        {title}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: 20,
+            borderRadius: 10,
+            backgroundColor: "white",
+            width: "100%",
+            height: "100%",
+          }}
+        >
+          <h2
+            style={{
+              fontSize: 44,
+              fontWeight: "bold",
+              width: "65%",
+              textAlign: "center",
+              fontFamily: '"ZenMaruGothic"',
+            }}
+          >
+            {title}
+          </h2>
+        </div>
       </div>
     ),
     {
